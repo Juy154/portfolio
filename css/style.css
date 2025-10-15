@@ -1,0 +1,155 @@
+@font-face {
+    font-family: ibm-light;
+    src: url(../font/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: ibm-light;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+#wrapper{
+    min-width: 393px;
+    margin: auto;
+
+    background-color: yellow;
+
+    display: grid;
+    grid-template-rows: 48px 4fr 4fr 5fr 2fr 1fr;
+}
+
+main,
+.about-me,
+.projects,
+aside,
+footer {
+    padding-left: 24px;
+}
+
+header,
+footer {
+    background-color: #8c8c8c;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+
+nav {
+    width: 48px;
+    aspect-ratio: 1;
+    background-color: #595959;
+
+    color: #fff; /*temporary*/
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main,
+aside {
+    background-color: #25619B;
+}
+
+main {
+    height: 852px;
+    color: #fff;
+    padding-top: 300px;
+}
+
+h1 {
+    max-width: 40rem;
+    font-size: 32px;
+    line-height: 40px;
+    hyphens: manual;
+}
+
+.about-me,
+.projects {
+    background-color: #fff;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 80px 24px 0px 24px;
+    gap: 40px;
+}
+
+h2 {
+    color: #25619B;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+p {
+    max-width: 40rem;
+    font-size: 24px;
+    line-height: 32px;
+    hyphens: manual;
+}
+
+aside {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+
+    padding-top: 80px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px 0px 0px 24px;
+    gap: 40px;
+}
+
+.contact {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.legal {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+
+    hyphens: manual;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#email {
+    margin-left: 20px;
+    user-select:all;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}

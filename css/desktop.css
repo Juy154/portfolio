@@ -1,0 +1,20 @@
+@media screen and (min-width: 1080px){
+    
+    main,
+    .about-me,
+    .projects,
+    aside,
+    footer {
+        padding-left: 48px;
+    }
+
+    h1 {
+        max-width: 48rem;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+}

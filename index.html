@@ -6,7 +6,7 @@
     <title>Julian Duy Le</title>
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/desktop.css">
+    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
 
 </head>
 
@@ -15,38 +15,71 @@
 <body>
     <div id="wrapper">
 
-
-        <header>
-            <nav>=</nav>
+        <header id="header">
+            <nav>
+                <a class="menu" href="#">
+                    <img src="../portfolio/icon/48-menu.svg" alt="hamburger menu with anchor links to scroll to a specific section">
+                </a>
+            </nav>
         </header>
+
         <main>
             <h1>
                 Hello, nice to meet you! <br><br> 
                 I'm Julian, a communi&shy;cation design student at HfG Schwäbisch Gmünd. 
             </h1>
+            <a class="scroll-bottom" href="#about-me">
+                Learn more below
+                <img src="../portfolio/icon/24-scroll-bottom.svg" alt="icon for hinting to scroll down">
+            </a>
         </main>
-        <section class="about-me">
+
+        <section class="about-me" id="about-me">
             <h2>About me</h2>
             <p>I enjoy structuring content with a focus on logical order, aiming to present inform&shy;ation in a clear and purposeful way. <br> <br>
             Right now, I'm interested in web design and didactic communi&shy;cation. I'm currently looking for an internship to put my design skills into practice and learn from experienced creatives. <br> <br>
             Feel free to explore my projects and get to know more about me along the way.
             </p>
         </section>
-        <section class="projects">projects</section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+        </section>
+
         <aside>
-            <h1>
+            <h3>
                 Thanks for stopping by my portfolio website. Let’s meet again in real life and work together at some projects.
-            </h1>
+            </h3>
+            <a class="scroll-top" href="#header">
+                Return to top
+                <img src="../portfolio/icon/24-scroll-top.svg" alt="icon for scrolling to the beginning">
+            </a>
         </aside>
         <footer>
-            <div class="contact">Feel free to email me at: <em id="email">lejulianduy@gmail.com</em></div>
-            <div class="legal">
-                <a class="footer-link" href="#">Impressum</a>
-                |
-                <a class="footer-link" href="#">Privacy Policy</a>
-                &shy;
-                <span>© 2025 Julian Duy Le. All rights reserved.</span>
+            <div class="contact">
+                Feel free to email me at: 
+                <em id="email">lejulianduy@gmail.com</em>
             </div>
+            
+            <div class="legal">
+                <div class="legal-subpages">
+                    <a class="legal-link" href="../portfolio/impressum.html">
+                        Impressum
+                        <img src="../portfolio/icon/24-text-link.svg" alt="arrow for hinting to click">
+                    </a>
+                    | 
+                    <a class="legal-link" href="../portfolio/privacy.html">
+                    Privacy Policy
+                    <img src="../portfolio/icon/24-text-link.svg" alt="arrow for hinting to click">
+                    </a>
+                    | 
+                </div>
+                <a class="credits" href="../portfolio/copyright.html">
+                    © 2025 Julian Duy Le. All rights reserved.
+                    <img src="../portfolio/icon/24-text-link.svg" alt="arrow for hinting to click">
+                <a>
+            </div>
+        
         </footer>
         
         

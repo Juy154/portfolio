@@ -2,35 +2,39 @@
     font-family: ibm-light;
     src: url(../font/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf);
 }
-
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     font-family: ibm-light;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: whitesmoke;
 }
-
-
 #wrapper{
-    min-width: 393px;
+    width: 393px;
     margin: auto;
 
     background-color: yellow;
 
     display: grid;
-    grid-template-rows: 48px 4fr 4fr 5fr 2fr 1fr;
+    grid-template-rows: 48px 100vh 130vh 150vh 70vh 35vh;
+
 }
+
+
+
 
 main,
 .about-me,
 .projects,
 aside,
 footer {
-    padding-left: 24px;
+    padding-left: 3vh;
+    padding-right: 2vh;
 }
 
 header,
@@ -49,14 +53,6 @@ nav {
     width: 48px;
     aspect-ratio: 1;
     background-color: #595959;
-
-    color: #fff; /*temporary*/
-    font-size: xx-large;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 main,
@@ -65,10 +61,15 @@ aside {
 }
 
 main {
-    height: 852px;
     color: #fff;
-    padding-top: 300px;
+    padding-top: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16vh;
 }
+
+
 
 h1 {
     max-width: 40rem;
@@ -76,6 +77,24 @@ h1 {
     line-height: 40px;
     hyphens: manual;
 }
+
+
+.scroll-bottom,
+.scroll-top {
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+
 
 .about-me,
 .projects {
@@ -87,8 +106,9 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
 
-    padding: 80px 24px 0px 24px;
-    gap: 40px;
+    padding-top: 16vh;
+    padding-right: 4vh;
+    gap: 8vh;
 }
 
 h2 {
@@ -109,7 +129,12 @@ aside {
     font-size: 24px;
     line-height: 32px;
 
-    padding-top: 80px;
+    padding-top: 8vh;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8vh;
 }
 
 
@@ -118,8 +143,23 @@ footer {
     display: flex;
     flex-direction: column;
 
-    padding: 32px 0px 0px 24px;
-    gap: 40px;
+    
+    padding-top: 4vh;
+    padding-right: 4vh;
+    gap: 8vh;
+
+    hyphens: manual;
+}
+
+h3 {
+    color: #fff;
+
+    max-width: 40rem;
+    font-size: 32px;
+    line-height: 40px;
+    hyphens: manual;
+
+    padding-bottom: 12%;
 }
 
 .contact {
@@ -132,24 +172,40 @@ footer {
 }
 
 .legal {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.legal-subpages,
+.credits {
     font-size: 16px;
     line-height: 24px;
     color: #fff;
 
-    hyphens: manual;
+    display: flex;
+    gap: 4px;
+
 }
 
-.footer-link {
+a {
     color: #fff;
     text-decoration: none;
 }
 
+.legal-link {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
 #email {
-    margin-left: 20px;
     user-select:all;
 }
 
-.footer-link:hover {
+a:hover {
     text-decoration: underline;
     color: #fff;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
 }

@@ -6,8 +6,8 @@
     <title>Julian Duy Le</title>
     
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
-
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
 </head>
 
 
@@ -17,10 +17,15 @@
 
         <header id="header">
             <nav>
-                <a class="menu" href="#">
+                <a class="menu" href="nav.html">
                     <img src="icon/48-menu.svg" alt="hamburger menu with anchor links to scroll to a specific section">
                 </a>
             </nav>
+            <div class="nav2">
+                <a class="menu2" href="#about-me">About me</a>
+                <a class="menu2" href="#projects">Projects</a>
+                <a class="menu2" href="#contact">Contact</a>
+            </div>
         </header>
 
         <main>
@@ -37,13 +42,50 @@
         <section class="about-me" id="about-me">
             <h2>About me</h2>
             <p>I enjoy structuring content with a focus on logical order, aiming to present inform&shy;ation in a clear and purposeful way. <br> <br>
-            Right now, I'm interested in web design and didactic communi&shy;cation. I'm currently looking for an internship to put my design skills into practice and learn from experienced creatives. <br> <br>
+            Right now, I'm interested in UI design and didactic communi&shy;cation. I'm currently looking for an internship to put my design skills into practice and learn from experienced creatives. <br> <br>
             Feel free to explore my projects and get to know more about me along the way.
             </p>
         </section>
 
         <section class="projects" id="projects">
             <h2>Projects</h2>
+            <div class="project-overview">
+
+                <div class="project-card">
+                    <h4>Bucephalus</h4>
+                    <a class="project-link" href="#">
+                        <div class="thumbnail t1">
+                            <img class="thumb-back" src="icon/24-pic-link.svg" alt="arrow out of frame for hinting to click">
+                        </div>
+                        <div class="meta">
+                            Audiovisualization | Animation | University project | 2025
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h4>Prison</h4>
+                    <a class="project-link" href="#">
+                        <div class="thumbnail t2">
+                            <img class="thumb-back" src="icon/24-pic-link.svg" alt="arrow out of frame for hinting to click">
+                        </div>
+                        <div class="meta">
+                            Information design | A3 Accordion fold book | University project | 2025
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h4>MediaMinder</h4>
+                    <a class="project-link" href="#">
+                        <div class="thumbnail t3">
+                            <img class="thumb-back" src="icon/24-pic-link.svg" alt="arrow out of frame for hinting to click">
+                        </div>
+                        <div class="meta">
+                            UI design | Mobile app prototype | Personal Project | 2025
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
         </section>
 
         <aside>
@@ -56,7 +98,7 @@
             </a>
         </aside>
         <footer>
-            <div class="contact">
+            <div class="contact" id="contact">
                 Feel free to email me at: 
                 <em id="email">lejulianduy@gmail.com</em>
             </div>

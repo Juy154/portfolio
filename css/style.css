@@ -21,7 +21,7 @@ body {
     background-color: red;
 
     display: grid;
-    grid-template-rows: 48px 100vh 1.5fr 4fr 1fr 35vh;
+    grid-template-rows: 48px 100vh 2fr 4fr 1fr 35vh;
 
 }
 

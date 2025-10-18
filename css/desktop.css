@@ -2,7 +2,7 @@
     
     #wrapper {
         max-width: 1920px;
-        grid-template-rows: 48px 100vh 2fr 2fr 1fr 20vh;
+        grid-template-rows: 48px 100vh 1.5fr 2fr 1fr 20vh;
     }
 
     body.subpage #wrapper {

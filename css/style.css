@@ -15,17 +15,19 @@ body {
     background-color: whitesmoke;
 }
 #wrapper{
-    width: 393px;
+    min-width: 320px;
     margin: auto;
 
-    background-color: yellow;
+    background-color: red;
 
     display: grid;
-    grid-template-rows: 48px 100vh 130vh 150vh 70vh 35vh;
+    grid-template-rows: 48px 100vh 2fr 4fr 1fr 35vh;
 
 }
 
-
+nav.subpage {
+    display: flex;
+}
 
 
 main,
@@ -33,7 +35,7 @@ main,
 .projects,
 aside,
 footer {
-    padding-left: 3vh;
+    padding-left: 2.5vh;
     padding-right: 2vh;
 }
 
@@ -55,6 +57,11 @@ nav {
     background-color: #595959;
 }
 
+.nav2 {
+    display: none;
+}
+
+
 main,
 aside {
     background-color: #25619B;
@@ -66,7 +73,7 @@ main {
 
     display: flex;
     flex-direction: column;
-    gap: 16vh;
+    justify-content: space-between;
 }
 
 
@@ -87,6 +94,7 @@ h1 {
     display: flex;
     flex-direction:row;
     align-items: center;
+    padding-bottom: 8vh;
     gap: 8px;
 }
 
@@ -124,15 +132,84 @@ p {
     hyphens: manual;
 }
 
+.projects {
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.project-link {
+    display: block;
+}
+
+.project-overview {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8vh;
+}
+
+.project-card {
+    max-width: 56vh;
+}
+
+.thumbnail {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 4/3;
+
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.t2 {
+    background-image: url(../pic/2-thumbnail.gif);
+}
+
+.t1 {
+    background-image: url(../pic/1-thumbnail.gif);
+}
+
+.thumb-back {
+    background-color: #D9D9D9;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    padding-bottom: 2vh;
+}
+
+.meta {
+    background-color:#D9D9D9;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+
+    padding: 2vh;
+    height: 14vh;
+}
+
+
+
 aside {
     color: #fff;
     font-size: 24px;
     line-height: 32px;
 
     padding-top: 8vh;
+    padding-bottom: 4vh;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     gap: 8vh;
 }
@@ -142,6 +219,7 @@ aside {
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     
     padding-top: 4vh;
@@ -154,12 +232,10 @@ footer {
 h3 {
     color: #fff;
 
-    max-width: 40rem;
+    max-width: 80vh;
     font-size: 32px;
     line-height: 40px;
     hyphens: manual;
-
-    padding-bottom: 12%;
 }
 
 .contact {
@@ -184,7 +260,7 @@ h3 {
     color: #fff;
 
     display: flex;
-    gap: 4px;
+    gap: 1vh;
 
 }
 
@@ -192,6 +268,22 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+nav:active {
+    background-color: #000;
+}
+
+.project-link:active {
+    text-decoration: none;
+    box-shadow: 10px 10px 0px #25619B;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #fff;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    }
 
 .legal-link {
     display: flex;
@@ -203,9 +295,15 @@ a {
     user-select:all;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #fff;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
+::-webkit-scrollbar{
+    width: 4px;
 }
+
+::-webkit-scrollbar-track{
+    background-color: #D9D9D9;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #8c8c8c;
+}
+

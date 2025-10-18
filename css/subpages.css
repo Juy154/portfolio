@@ -30,6 +30,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 8vh;
+    max-width: 50vh;
 }
 .privacy {
     display: flex;

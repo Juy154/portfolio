@@ -76,10 +76,6 @@
         text-decoration-thickness: 1px;
     }
 
-    .scroll-top,
-    .scroll-bottom {
-        padding-bottom: 4vh;
-    }
 
 
     ::-webkit-scrollbar{

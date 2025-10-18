@@ -6,50 +6,19 @@
     <title>Copyright</title>
     
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
-
-
-    <style>
-        #wrapper {
-            display: grid;
-            grid-template-rows: 48px 120vh 35vh;
-        }
-        header {
-            flex-direction: row;
-        }
-        p {
-            font-size: 16px;
-            line-height: 24px;
-        }
-        h3 {
-            font-size: 24px;
-            line-height: 32px;
-            color: #000;
-            padding-bottom: 0px;
-        }
-        .about-me {
-            padding-top: 8vh;
-        }
-        .font {
-            display: flex;
-            flex-direction: column;
-            gap: 4vh;
-        }
-        .scroll-top:hover,
-        .scroll-top {
-            color: #25619B;
-        }
-    </style>
+    <link rel="stylesheet" href="css/subpages.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
 
 </head>
 
 
 
-<body>
+<body class="subpage">
     <div id="wrapper">
 
         <header id="header">
-            <nav>
+            <nav class="subpage">
                 <a class="back" href="index.html">
                     <img src="icon/48-back.svg" alt="hamburger menu with anchor links to scroll to a specific section">
                 </a>
@@ -57,19 +26,22 @@
         </header>
 
         <div class="about-me">
-            <h2>Copyright Notice</h2>
-            <p>All content on this website, including text, images, graphics, and design, is the property of © Julian Duy Le, unless otherwise stated. Unauthorized use, reproduction, or distribution of any materials without written permission is strictly prohibited. <br><br> 
-                This website and its content are protected under international copyright laws. All rights reserved. </p>
-            <div class="font">
-               <h3>Font</h3>
-                <p>This website uses the IBM Plex Sans typeface, which is provided through Google Fonts. <br><br>
-                IBM Plex Sans is an open-source font developed by IBM and released under the SIL Open Font License, Version 1.1. 
-                This license allows free use, modification, and distribution of the font, including for commercial purposes.
-                </p> 
+            <div class="copyright">
+                  <h2>Copyright Notice</h2>
+                <p>All content on this website, including text, images, graphics, and design, is the property of © Julian Duy Le, unless otherwise stated. Unauthorized use, reproduction, or distribution of any materials without written permission is strictly prohibited. <br><br> 
+                    This website and its content are protected under international copyright laws. All rights reserved. </p>
+                <div class="font">
+                <h3>Font</h3>
+                    <p>This website uses the IBM Plex Sans typeface, which is provided through Google Fonts. <br><br>
+                    IBM Plex Sans is an open-source font developed by IBM and released under the SIL Open Font License, Version 1.1. 
+                    This license allows free use, modification, and distribution of the font, including for commercial purposes.
+                    </p> 
+                </div>
             </div>
+              
             <a class="scroll-top" href="#header">
                 Return to top
-                <img src="icon/24-scroll-top-blue.svg" alt="icon for scrolling to the beginning">
+                <img src="icon/24-scroll-top-blue.svg" alt="arrow left to go back">
             </a>
         </div>
 

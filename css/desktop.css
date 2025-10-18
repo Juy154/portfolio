@@ -1,20 +1,89 @@
 @media screen and (min-width: 1080px){
     
+    #wrapper {
+        max-width: 1920px;
+        grid-template-rows: 48px 100vh 2fr 2fr 1fr 20vh;
+    }
+
+    body.subpage #wrapper {
+        max-width: 1920px;
+        grid-template-rows: 48px 1fr 20vh;
+    }
+
+
+
     main,
     .about-me,
     .projects,
     aside,
     footer {
-        padding-left: 48px;
+        padding-left: 8vh;
+    }
+
+    main {
+        padding-top: 35vh;
     }
 
     h1 {
-        max-width: 48rem;
+        max-width: 100vh;
         font-size: 40px;
         line-height: 48px;
+    }
+    
+
+    .projects {
+        padding-top: 8vh;
+    }
+
+    .project-overview {
+        display: flex;
+        flex-direction: row;
+        gap: 8vh;
+    }   
+
+    .project-card {
+        width: 44vh;
+    }   
+
+    footer {
+        gap: 4vh;
     }
 
     .contact {
         flex-direction: row;
+        gap: 2vh;
     }
+
+    .legal {
+        flex-direction: row;
+        gap: 2vh;
+    }
+
+    .legal-subpages {
+        gap: 2vh;
+    }
+
+
+    .project-link:hover {
+        text-decoration: none;
+        box-shadow: 10px 10px 0px #25619B;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #fff;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
+    }
+
+    .scroll-top,
+    .scroll-bottom {
+        padding-bottom: 4vh;
+    }
+
+
+    ::-webkit-scrollbar{
+        width: 8px;
+    }
+
 }

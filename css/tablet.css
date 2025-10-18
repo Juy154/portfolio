@@ -26,9 +26,12 @@
         padding: 1vh 4vh;
     }
 
-    .scroll-top,
     .scroll-bottom {
         padding-bottom: 16vh;
+    }
+
+    .scroll-top {
+        padding-bottom: 2vh;
     }
 
     .project-overview {

@@ -271,6 +271,22 @@ a {
     text-decoration: none;
 }
 
+nav:hover {
+    background-color: #000;
+}
+
+.project-link:hover {
+    text-decoration: none;
+    box-shadow: 10px 10px 0px #25619B;
+}
+
+ a:hover {
+    text-decoration: underline;
+    color: #fff;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
 nav:active {
     background-color: #000;
 }

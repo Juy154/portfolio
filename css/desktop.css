@@ -67,6 +67,11 @@
         background-color: #000;
     }
 
+    .menu2:hover {
+        text-decoration: none;
+        background-color: #000;
+    }
+
     .project-link:hover {
         text-decoration: none;
         box-shadow: 10px 10px 0px #25619B;

@@ -170,12 +170,20 @@ p {
     align-items: start;
 }
 
+.t3 {
+    background-image: url(../pic/3-thumbnail.gif);
+    background-size: 115%;
+}
+
+
 .t2 {
     background-image: url(../pic/2-thumbnail.gif);
+    background-size: 115%;
 }
 
 .t1 {
     background-image: url(../pic/1-thumbnail.gif);
+    background-size: 80%;
 }
 
 .thumb-back {

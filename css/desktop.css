@@ -59,7 +59,7 @@
         line-height: var(--font-48px);
         max-width: clamp(300px, 60%, 800px);
 
-        margin-top: clamp(1rem, 8%, 8rem);
+        margin-top: clamp(4rem, 16%, 16rem);
     }
 
     p {

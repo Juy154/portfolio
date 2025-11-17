@@ -145,7 +145,7 @@ h1 {
 }
 
 .scroll-bottom {
-    margin-bottom: clamp(1rem, 8%, 8rem);
+    margin-bottom: clamp(5rem, 30%, 30rem);
 }
 
 

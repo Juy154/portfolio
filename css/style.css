@@ -52,7 +52,8 @@ footer {
 }
 
 p,h1,h2,h3 {
-    max-width: clamp(300px, 95%, 800px); 
+    text-align: left;
+    max-width: clamp(300px, 100%, 800px); 
 }
 
 header,
@@ -193,7 +194,8 @@ h2 {
 p {
     font-size: var(--font-24px);
     line-height: var(--font-32px);
-    hyphens: manual;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 /* 

@@ -1,6 +1,12 @@
+/* 
+========
+General
+======== 
+*/
+
 #wrapper {
     display: grid;
-    grid-template-rows: 48px 1fr 35vh;
+    grid-template-rows: 48px auto minmax(200px, auto);
 }
 header {
     flex-direction: row;
@@ -10,71 +16,868 @@ nav{
     display: flex;
 }
 
+main {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--black-10);
+}
+
+.projekt-lp {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-top: 8vh;
+}
+
+.about-me.subpage {
+    gap: 1rem;
+}
+
+
+
+/* 
+========
+Text
+======== 
+*/
+
 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: var(--font-24px);
+    line-height: var(--font-32px);
+    color: var(--darkgrey);
+    padding-top: 6px;
+    margin-bottom: 3rem;
+}
+
+.subpage-h1,
+h2 {
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 24px;
-    line-height: 32px;
-    color: #000;
-    padding-bottom: 0px;
+    font-size: var(--font-24px);
+    line-height: var(--font-32px);
+    color: var(--black);
+    padding-bottom: 1rem;
 }
-.about-me {
-    padding-top: 8vh;
-    padding-bottom: 4vh;
-    justify-content: space-between;
+
+.caption {
+    font-size: var(--font-16px);
+    line-height: var(--font-24px);
+    margin-top: 0.5rem;
+    color: var(--grey);
 }
-.impressum {
+
+.caption.negative {
+    color: var(--hellgrey);
+}
+
+.caption.gallery {
+    margin-bottom: 6rem;
+}
+
+.subpage-text {
     display: flex;
     flex-direction: column;
-    gap: 8vh;
-    max-width: 50vh;
+    gap: 3rem;
 }
-.privacy {
-    display: flex;
-    flex-direction: column;
-    gap: 8vh;
-    padding-bottom: 4vh;
-    max-width: 80vh;
+
+.subpage-text.description {
+    color: var(--hellgrey);
 }
-.part {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
+
+.subpage-text.list {
+    margin-bottom: 0;
 }
-.data,
-.host {
+
+table {
+    border-spacing: 0 0.5rem;
+    margin-bottom: 2rem;
+}
+
+td {
+    border: var(--grey);
+    border-style: solid;
+    border-width: 0px 0px 0.5px 0px;
+    padding: 4px 4px 4px 4px;
+
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.td-1 {
+    color: var(--hellgrey);
+    padding-right: 4rem;
+
+    border-width: 0;
+    margin-bottom: 0rem;
+}
+
+.td-2 {
+    color: var(--grey);
+
+    border-width: 0;
+    margin-bottom: 0rem;
+}
+
+.td-3 {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.list {
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
+
+/* 
+========
+Interaction
+======== 
+*/
+
 ul {
     padding-left: 3vh;
 }
 li {
     list-style-type: square;
+    font-size: var(--font-24px);
+    line-height: var(--font-32px);
+
 }
 li::marker {
-    color: #8c8c8c;
-}
-
-.copyright {
-    display: flex;
-    flex-direction: column;
-    gap: 8vh;
-    padding-bottom: 4vh;
-    max-width: 80vh;
-}
-.font {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
+    color: var(--grey);
 }
 
 .scroll-top:hover,
-.scroll-top {
-    color: #25619B;
+.scroll-top,
+.next-page,
+.next-page:hover {
+    color: var(--blue);
     align-items: flex-end;
+}
+
+.scroll-top.subpage {
+    margin-bottom: 0;
+}
+
+
+.external-link,
+.external-link:hover {
+    display: flex;
+    flex-direction: row;
+    color: var(--blue);
+    gap: 0.5rem;
+}
+
+
+/* 
+========
+Gallery
+======== 
+*/
+
+.pic {
+    margin-top: 6px;
+    margin-bottom: 3rem;
+}
+
+.thumbnail2,
+.pic2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.thumbnail2 {
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 4/3;
+    max-width: 120vh;
+}
+
+.t1 {
+    background-color: var(--black-green);
+    aspect-ratio: 4/3;
+}
+.t1-g2 {
+    width: 80%;
+}
+
+.t2,
+.t3 {
+    background-color: var(--black);
+    aspect-ratio: 4/3;
+}
+
+.t2-g2,
+.t3-g2 {
+    width: 100%;
+}
+
+.project-meta {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+.pic2 {
+    background-color: var(--hellgrey);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 4/3;
+    
+}
+.part-gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+/* 
+========
+1-1
+======== 
+*/
+
+.p1-1 {
+    background-image: url(../pic/project1/5039×1080-notation.png);
+    grid-column: 6 span;
+    aspect-ratio: 28/9;
+    background-size: 90%;
+}
+
+.p1-2 {
+    background-image: url(../pic/project1/1920x1080-analyse.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 90%;
+}
+
+.p1-3 {
+    background-color: var(--black-green);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+}
+.p1-3-g {
+    background-color: var(--black-green);
+    width: 90%;
+}
+
+/* 
+========
+1-2
+======== 
+*/
+
+
+.p1-4 {
+    background-image: url(../pic/project1/1200x900-scribbles.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p1-5 {
+    background-image: url(../pic/project1/1200x900-scribbles2.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p1-6 {
+    background-image: url(../pic/project1/1200x900-scribbles3.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p1-7 {
+    background-image: url(../pic/project1/1200x900-scribbles4.png);
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p1-8 {
+    background-image: url(../pic/project1/1200x900-scribbles5.png);
+    grid-column: 3 span;
+    grid-row: 2 span;
+    aspect-ratio: auto;
+    background-size: 85%;
+}
+
+.p1-9 {
+    background-color: var(--black-green);
+    grid-column: 3 span;
+    aspect-ratio: 16/9;
+}
+.p1-9-g {
+    width: 70%;
+}
+
+
+.p1-10 {
+    background-image: url(../pic/project1/1080x1080-lederkissen-var.gif);
+    background-color: var(--black-green);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 60%;
+}
+
+.p1-11 {
+    background-image: url(../pic/project1/1080x1080-metalltopf_var.gif);
+    background-color: var(--black-green);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 60%;
+}
+
+.p1-12 {
+    background-image: url(../pic/project1/1080x1080-laserschuss_var.gif);
+    background-color: var(--black-green);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 60%;
+}
+
+/* 
+========
+1-3
+======== 
+*/
+
+.p1-13 {
+    background-color: var(--black-green);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+}
+.p1-13-g {
+    width: 80%;
+}
+
+/* 
+========
+1-4
+======== 
+*/
+
+.p1-14 {
+    background-image: url(../pic/project1/1200x900-components.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+
+.p1-15 {
+    background-image: url(../pic/project1/1200x900-binding.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+
+.p1-16 {
+    background-image: url(../pic/project1/1200x900-repro.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+
+.p1-17 {
+    background-color: var(--black-green);
+    grid-column: 6 span;
+    aspect-ratio: 4/3;
+}
+.p1-17-g {
+    width: 100%;
+}
+
+/* 
+========
+1-5
+======== 
+*/
+
+.p1-18 {
+    background-image: url(../pic/project1/900x1200-poster.png);
+    background-color: var(--black-green);
+    background-size: 90%;
+    aspect-ratio: 3/4;
+}
+
+.p1-19 {
+    background-image: url(../pic/project1/1200x900-exhibition.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+
+.p1-20 {
+    background-image: url(../pic/project1/1200x900-exhibition2.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+
+
+/* 
+========
+2-1
+======== 
+*/
+
+.p2-1 {
+    background-image: url(../pic/project2/1200x900-scribbles.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-2 {
+    background-image: url(../pic/project2/1200x900-scribbles2.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p2-4 {
+    background-image: url(../pic/project2/900x1200-process.png);
+    aspect-ratio: 3/4;
+    background-size: 90%;
+}
+
+.p2-3 {
+    background-image: url(../pic/project2/1200x900-scribbles3.png);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p2-5 {
+    background-image: url(../pic/project2/1200x900-scribbles4.png);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-6 {
+    background-image: url(../pic/project2/1200x900-scribbles5.png);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-7 {
+    background-image: url(../pic/project2/1200x900-scribbles6.png);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-8 {
+    background-image: url(../pic/project2/1200x900-scribbles7.png);
+    grid-column: 1 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+/* 
+========
+2-2
+======== 
+*/
+
+.p2-9 {
+    background-image: url(../pic/project2/1200x900-diagram.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-10 {
+    background-image: url(../pic/project2/1200x900-diagram2.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-11 {
+    background-image: url(../pic/project2/1200x900-icon.png);
+    grid-column: 6 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-12 {
+    background-image: url(../pic/project2/1200x900-joe.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p2-13 {
+    background-image: url(../pic/project2/1200x900-building.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+/* 
+========
+2-3
+======== 
+*/
+
+
+.p2-14 {
+    background-image: url(../pic/project2/1200x900-cover-scribbles.png);
+    grid-column: 6 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p2-15 {
+    background-image: url(../pic/project2/900x1200-cover.png);
+    background-color: var(--black-green);
+    grid-column: 3 span;
+    aspect-ratio: 3/4;
+    background-size: 90%;
+}
+.p2-16 {
+    background-image: url(../pic/project2/900x1200-cover2.png);
+    background-color: var(--black-green);
+    grid-column: 3 span;
+    aspect-ratio: 3/4;
+    background-size: 90%;
+}
+
+/* 
+========
+2-4
+======== 
+*/
+
+.p2-17 {
+    background-image: url(../pic/project2/1200x900-tablet-scribble.png);
+    grid-column: 6 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+.p2-18 {
+    background-image: url(../pic/project2/1200x900-tablet1.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-19 {
+    background-image: url(../pic/project2/1200x900-tablet2.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-20 {
+    background-image: url(../pic/project2/1200x900-tablet3.png);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+
+/* 
+========
+2-5
+======== 
+*/
+
+.p2-21 {
+    background-image: url(../pic/project2/1200x900-cover.png);
+    background-color: var(--black-green);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+    background-size: 97%;
+}
+.p2-22 {
+    background-image: url(../pic/project2/1200x900-leporello.png);
+    background-color: var(--black-green);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-23 {
+    background-image: url(../pic/project2/1200x900-leporello2.png);
+    background-color: var(--black-green);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-24 {
+    background-image: url(../pic/project2/1200x900-leporello3.png);
+    background-color: var(--black-green);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-25 {
+    background-image: url(../pic/project2/1200x900-leporello4.png);
+    background-color: var(--black-green);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-26 {
+    background-image: url(../pic/project2/1200x900-leporello5.png);
+    background-color: var(--black-green);
+    grid-column: 2 span;
+    aspect-ratio: 4/3;
+}
+.p2-27 {
+    background-color: var(--black);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+}
+.p2-27-g {
+    width: 90%;
+}
+
+
+/* 
+========
+2-6
+======== 
+*/
+
+.p2-28 {
+    background-color: var(--black);
+    grid-column: 6 span;
+    aspect-ratio: 4/3;
+}
+.p2-28-g {
+    width: 100%;
+}
+
+/* 
+========
+3-1
+======== 
+*/
+
+.p3-1 {
+    background-image: url(../pic/project3/1920x1080-process.png);
+    grid-column: 3 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+.p3-2 {
+    background-image: url(../pic/project3/1920x1080-process2.png);
+    grid-column: 3 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+.p3-3 {
+    background-image: url(../pic/project3/1920x1080-process3.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+.p3-4 {
+    background-image: url(../pic/project3/1920x1080-process4.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+
+/* 
+========
+3-2
+======== 
+*/
+
+.p3-5 {
+    background-image: url(../pic/project3/1200x900-scribbles.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p3-6 {
+    background-image: url(../pic/project3/1200x900-scribbles2.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p3-7 {
+    background-image: url(../pic/project3/1200x900-scribbles3.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+.p3-8 {
+    background-image: url(../pic/project3/1200x900-scribbles4.png);
+    grid-column: 3 span;
+    aspect-ratio: 4/3;
+    background-size: 80%;
+}
+
+/* 
+========
+3-3
+======== 
+*/
+
+.p3-9 {
+    background-image: url(../pic/project3/1920x1080-process5.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+.p3-10 {
+    background-image: url(../pic/project3/1920x1080-process6.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+
+/* 
+========
+3-4
+======== 
+*/
+
+.p3-11 {
+    background-image: url(../pic/project3/1920x1080-design.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+.p3-12 {
+    background-image: url(../pic/project3/1920x1080-design2.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 80%;
+}
+.p3-13 {
+    background-image: url(../pic/project3/1920x1080-result.png);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+    background-size: 90%;
+}
+.p3-14 {
+    background-color: var(--black);
+    grid-column: 6 span;
+    aspect-ratio: 16/9;
+}
+.p3-14-g {
+    width: 90%;
+}
+
+
+
+
+@media screen and (min-width: 1080px) {
+
+    .projekt-lp {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        column-gap: 3rem;
+        justify-content: flex-start;
+        padding-right: 1.5rem;
+    }
+
+    .about-me.subpage {
+        row-gap: 1rem;
+        column-gap: 3rem;
+        margin-right: 2rem;
+    }
+        
+    .subpage-text {
+        max-width: none;
+    }
+
+    .subpage-h1,
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+
+    .part-0 {
+        grid-column: 2;
+        justify-self: end;
+    }
+
+    .part {
+        grid-column: 2 span;
+    }
+
+    .part-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 0.25rem;
+        row-gap: 0.5rem;
+    }
+
+    td {
+        border-width: 0px 0px 0.5px 0px;
+        vertical-align: top;
+        display: table-cell;
+        width: auto;
+        margin-bottom: 0;
+    }
+    .td-1 {
+        width: 12rem;
+        border-width: 0px 0px 0.5px 0px;
+    }
+    .td-2 {
+        width: 12rem;
+        border-width: 0px 0px 0.5px 0px;
+    }
+
+    .next-page {
+        margin-right: clamp(2vw, 34.5vw, 240vw);
+    }
+
+    .next-page,
+    .next-page:hover {
+        justify-content: flex-start;
+    }
+
+    .scroll-top, .next-page {
+        margin-bottom: 0;
+    }
+
+    .p1-7 {
+        grid-column: 6 span;
+        aspect-ratio: 16/9;
+        background-size: 60%;
+    }
+    
+    .p1-17 {
+        aspect-ratio: 16/9;
+    }
+    .p1-17-g {
+        width: 80%;
+    }
+
+    .p1-18 {
+        grid-column: 4 span;
+        grid-row: 2 span;
+        aspect-ratio: auto;
+        background-size: 50%;
+    }
+
+    .p2-4 {
+        grid-column: 5 span;
+        grid-row: 5 span;
+        aspect-ratio: auto;
+        background-size: 69%;
+    }
+
+    .p2-11 {
+        grid-column: 6 span;
+        aspect-ratio: 4/3;
+        background-size: 90%;
+    }
+    .p2-14 {
+        aspect-ratio: 16/9;
+        background-size: 60%;
+    }
+    .p2-17 {
+        aspect-ratio: 16/9;
+        background-size: 60%;
+    }
+
+    .p2-28 {
+        aspect-ratio: 16/9;
+    }
+    .p2-28-g {
+        width: 80%;
+    }
+
+
+
+
 }

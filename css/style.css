@@ -25,7 +25,7 @@ body {
     margin: auto;
 
     display: grid;
-    grid-template-rows: 48px minmax(100vh, 1fr) auto auto auto minmax(200px, auto);
+    grid-template-rows: 48px minmax(95vh, 1fr) auto auto auto minmax(200px, auto);
 }
 
 nav.subpage {

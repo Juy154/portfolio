@@ -223,7 +223,7 @@ Projects
 }
 
 .project-card {
-    max-width: clamp(8rem, 90%, 24rem);
+    max-width: clamp(8rem, 100%, 24rem);
  }
 
 .thumbnail {

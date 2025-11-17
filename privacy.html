@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
     
+    <link rel="stylesheet" href="css/token.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subpages.css">
-    <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
+
 
 </head>
 
@@ -19,65 +20,59 @@
 
         <header id="header">
             <nav class="subpage">
-                <a class="back" href="index.html">
-                    <img src="icon/48-back.svg" alt="arrow left to go back">
+                <a class="back" href="index.html#contact">
+                    <img src="icon/48-back.svg" alt="Pfeil nach links, um zurückzugehen">
                 </a>
             </nav>
         </header>
 
-        <div class="about-me">
-            <div class="privacy">
-                <h2>Privacy Policy</h2>
-                <p>This policy may be updated from time to time. The most recent version will always be available on this page.</p>
-                <div class="part">
-                    <h3>1. Hosting and Server Logs</h3>
-                    <div class="host">
-                        <p>This site is hosted by GitHub Pages, a service provided by GitHub, Inc. Like most hosting providers, GitHub may automatically collect and store technical information in server logs. <br><br> 
-                            This may include: 
-                            <ul>
-                                <li>IP addresses</li>
-                                <li>Browser type and settings</li>
-                                <li>Date and time of access</li>
-                                <li>Referring website</li>
-                            </ul>
-                            This data is collected by GitHub, not by the site owner, and is used for operational and security purposes. For more information, please see GitHub’s Privacy Statement.
-                        </p>
-                    </div>
-                </div>
-                <div class="part">
-                    <h3>2. Fonts</h3>
-                    <p>This site uses the IBM Plex Sans font, which is self-hosted. No font data is transmitted to third-party servers like Google.</p>
-                </div>
-                <div class="part">
-                    <h3>3. No personal data collection</h3>
-                    <div class="data">
-                        <p>This website is designed to respect your privacy. It does not use:
+        <div class="about-me subpage">
+            <h2>Datenschutzerklärung</h2>
+            <p class="subpage-text">Diese Richtlinie kann von Zeit zu Zeit aktualisiert werden. Die aktuellste Version ist immer auf dieser Seite verfügbar.</p>
+            <div class="part-0">
+                <h3>1. Hosting und Serverprotokolle</h3>
+                <div class="list">
+                    <p class="subpage-text list">Diese Website wird von GitHub Pages gehostet, einem Dienst von GitHub, Inc. Wie die meisten Hosting-Anbieter kann GitHub automatisch technische Informationen in Server-Protokollen erfassen und speichern. <br><br> 
+                        Dazu können gehören: </p>
                         <ul>
-                            <li>Contact forms</li>
-                            <li>Email newsletter signups</li>
-                            <li>Google Analytics or similar tracking tool</li>
-                            <li>Advertising or marketing scripts. </li>
+                            <li>IP-Adressen</li>
+                            <li>Browsertyp und -einstellungen</li>
+                            <li>Datum und Uhrzeit des Zugriffs</li>
+                            <li>Verweisende Website</li>
                         </ul>
-                        You can browse this site without being tracked or submitting any personal information.</p>
-                    </div>
-                </div>
-                <div class="part">
-                    <h3>4. External links</h3>
-                    <div class="data">
-                        <p>This site may contain links to external websites. I am not responsible for the privacy practices or content of those third-party sites.</p>
-                    </div>
+                    <p class="subpage-text">Diese Daten werden von GitHub und nicht vom Eigentümer der Website erfasst und für betriebliche und Sicherheitszwecke verwendet. Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub.</p>
                 </div>
             </div>
-
+            <div class="part-0">
+                <h3>2. Schriften</h3>
+                <p class="subpage-text">Diese Website verwendet die Schriftart IBM Plex Sans, die selbst gehostet wird. Es werden keine Schriftartdaten an Server von Drittanbietern wie Google übertragen.</p>
+            </div>
+            <div class="part-0">
+                <h3>3. Keine Erhebung personenbezogener Daten</h3>
+                <div class="list">
+                    <p class="subpage-text list">Diese Website wurde so gestaltet, dass Ihre Privatsphäre respektiert wird. Sie verwendet keine:</p>
+                    <ul>
+                        <li>Kontaktformulare</li>
+                        <li>Anmeldung für E-Mail-Newsletter</li>
+                        <li>Google Analytics oder ähnliche Tracking-Tools</li>
+                        <li>Werbe- oder Marketing-Skripte</li>
+                    </ul>
+                    <p class="subpage-text">Sie können diese Website besuchen, ohne dass Sie dabei verfolgt werden oder persönliche Daten angeben müssen.</p>
+                </div>
+            </div>
+            <div class="part-0">
+                <h3>4. Externe Links</h3>
+                <p class="subpage-text">Diese Website kann Links zu externen Websites enthalten. Ich bin nicht verantwortlich für die Datenschutzpraktiken oder Inhalte dieser Websites Dritter.</p>
+            </div>
             <a class="scroll-top" href="#header">
-                Return to top
-                <img src="icon/24-scroll-top-blue.svg" alt="icon for scrolling to the beginning">
+            Zurück nach oben
+                <img src="icon/24-scroll-top-blue.svg" alt="Icon zum Scrollen zum Anfang">
             </a>
         </div>
 
         <footer>
-            <div class="contact">
-                Feel free to email me at: 
+            <div class="contact" id="contact">
+                Schreib mir gerne eine E-Mail an: 
                 <em id="email">lejulianduy@gmail.com</em>
             </div>
             
@@ -85,19 +80,19 @@
                 <div class="legal-subpages">
                     <a class="legal-link" href="impressum.html">
                         Impressum
-                        <img src="icon/24-text-link.svg" alt="arrow for hinting to click">
+                        <img src="icon/24-text-link.svg" alt="Pfeil als Hinweis zum Klicken">
                     </a>
                     | 
                     <a class="legal-link" href="privacy.html">
-                    Privacy Policy
-                    <img src="icon/24-text-link.svg" alt="arrow for hinting to click">
+                    Datenschutzerklärung
+                    <img src="icon/24-text-link.svg" alt="Pfeil als Hinweis zum Klicken">
                     </a>
                     | 
                 </div>
                 <a class="credits" href="copyright.html">
-                    © 2025 Julian Duy Le. All rights reserved.
-                    <img src="icon/24-text-link.svg" alt="arrow for hinting to click">
-                <a>
+                    © 2025 Julian Duy Le. Alle Rechte vorbehalten.
+                    <img src="icon/24-text-link.svg" alt="Pfeil als Hinweis zum Klicken">
+                </a>
             </div>
         
         </footer>

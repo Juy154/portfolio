@@ -1,0 +1,27 @@
+:root {
+    --blue:     #25619B;
+    --white:    #fff;
+    --hellgrey: #D9D9D9;
+    --grey:     #8c8c8c;
+    --darkgrey: #595959;
+    --black-10: #262626;
+    --black:    #000;
+    --black-green: #101413;
+
+    --font-family-base: 'IBM Plex Sans Light', sans-serif;
+    --font-base-size: 16px;
+
+    --font-4px: 0.25rem;
+    --font-8px: 0.5rem;
+    --font-16px: 1rem;
+    --font-24px: 1.5rem;
+    --font-32px: 2rem;
+    --font-40px: 2.5rem;
+    --font-48px: 3rem;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Light';
+    src: url(../font/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf);
+    font-weight: normal;
+}

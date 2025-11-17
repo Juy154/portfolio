@@ -117,7 +117,7 @@ main {
     
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: clamp(1rem, 6rem, 12rem);
 }
 
@@ -127,6 +127,8 @@ h1 {
     font-size: var(--font-32px);
     line-height: var(--font-40px);
     hyphens: manual;
+
+    margin-top: clamp(5rem, 30%, 30rem);
 }
 
 
@@ -144,9 +146,6 @@ h1 {
     gap: 0.5rem;
 }
 
-.scroll-bottom {
-    margin-bottom: clamp(5rem, 30%, 30rem);
-}
 
 
 .scroll-top,

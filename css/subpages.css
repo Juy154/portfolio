@@ -200,7 +200,7 @@ Gallery
 }
 
 .thumbnail2 {
-    background-color: none;
+    background-color: var(--black);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

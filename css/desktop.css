@@ -45,9 +45,6 @@
         padding: 1vh 4vh;
     }
 
-    .scroll-bottom {
-        margin-bottom: clamp(1rem, 8%, 8rem);
-    }
 
     .about-me {
         display: grid;
@@ -61,6 +58,8 @@
         font-size: var(--font-40px);
         line-height: var(--font-48px);
         max-width: clamp(300px, 60%, 800px);
+
+        margin-top: clamp(1rem, 8%, 8rem);
     }
 
     p {

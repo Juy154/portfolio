@@ -62,7 +62,7 @@
     h1 {
         font-size: var(--font-40px);
         line-height: var(--font-48px);
-        max-width: clamp(300px, 60%, 800px);
+        max-width: clamp(300px, 70%, 900px);
 
         margin-top: clamp(4rem, 28vh, 16rem);
     }

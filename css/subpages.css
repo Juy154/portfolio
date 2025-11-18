@@ -793,7 +793,8 @@ Gallery
         grid-template-columns: 1fr 1.5fr;
         column-gap: 3rem;
         justify-content: flex-start;
-        padding-right: 2rem;
+        padding-right: 5rem;
+        padding-bottom: 4rem;
     }
 
     .about-me.subpage {

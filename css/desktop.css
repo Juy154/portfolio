@@ -8,7 +8,7 @@
 
     #wrapper {
         max-width: 1920px;
-        grid-template-rows: 48px clamp(450px, 100vh, 700px) auto auto auto minmax(150px, auto);
+        grid-template-rows: 48px clamp(450px, 100vh, 700px) repeat(3, auto) minmax(150px, auto);
     }
 
     body.subpage #wrapper {
@@ -70,11 +70,6 @@
     h3 {
         max-width: clamp(300px, 80%, 800px);
     }
-
-    .project-card {
-        max-width: clamp(8rem, 26%, 32rem);
-    }
-
 
     footer {
         gap: 1rem;

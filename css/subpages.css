@@ -8,6 +8,17 @@ General
     display: grid;
     grid-template-rows: 48px auto minmax(200px, auto);
 }
+
+
+main,
+.about-me,
+.projects,
+aside,
+footer {
+    padding-left: 1.5rem;
+}
+
+
 header {
     flex-direction: row;
 }
@@ -26,7 +37,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
-    margin-top: 8vh;
+    margin-top: 4rem;
 }
 
 .about-me.subpage {
@@ -768,6 +779,15 @@ Gallery
 
 @media screen and (min-width: 1080px) {
 
+    main,
+    .about-me,
+    .projects,
+    aside,
+    footer {
+        padding-left: clamp(3px, 3rem, 6rem);
+    }
+
+    
     .projekt-lp {
         display: grid;
         grid-template-columns: 1fr 1.5fr;

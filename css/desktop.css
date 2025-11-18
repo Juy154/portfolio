@@ -69,7 +69,7 @@
 
     p {
         padding-top: 6px;
-        
+        max-width: clamp(300px, 95%, 900px); 
     }
 
     h3 {

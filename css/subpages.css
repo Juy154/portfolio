@@ -793,7 +793,7 @@ Gallery
         grid-template-columns: 1fr 1.5fr;
         column-gap: 3rem;
         justify-content: flex-start;
-        padding-right: 5rem;
+        padding-right: 1.5rem;
         padding-bottom: 4rem;
     }
 

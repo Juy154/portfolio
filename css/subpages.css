@@ -837,6 +837,7 @@ Gallery
         vertical-align: top;
         display: table-cell;
         margin-bottom: 0;
+        padding-right: 4rem;
     }
     .td-1 {
         width: 12rem;

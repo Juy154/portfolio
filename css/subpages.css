@@ -773,13 +773,13 @@ Gallery
         grid-template-columns: 1fr 1.5fr;
         column-gap: 3rem;
         justify-content: flex-start;
-        padding-right: 3rem;
+        padding-right: 2rem;
     }
 
     .about-me.subpage {
         row-gap: 1rem;
         column-gap: 3rem;
-        padding-right: 5rem;
+        padding-right: 3rem;
     }
         
     .subpage-text {
@@ -825,10 +825,6 @@ Gallery
     .td-2 {
         width: 12rem;
         border-width: 0px 0px 0.5px 0px;
-    }
-
-    .next-page {
-        margin-right: clamp(2vw, 34.5vw, 240vw);
     }
 
     .next-page,

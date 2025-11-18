@@ -54,6 +54,11 @@
         justify-content: flex-start;
     }
 
+    .project-card {
+        max-width: clamp(8rem, 29%, 26rem);
+    }
+
+
     h1 {
         font-size: var(--font-40px);
         line-height: var(--font-48px);

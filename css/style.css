@@ -44,7 +44,7 @@ main,
 .projects,
 aside,
 footer {
-    padding-left: clamp(3px, 4vw, 2vw);
+    padding-left: 1.5rem;
     padding-right: 1rem;
     display: flex;
     justify-content: center;

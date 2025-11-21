@@ -238,15 +238,15 @@ Projects
     position: relative;
 }
 
-/* .t1-g {
+.t1-g {
     width: 80%;
 }
 .t2-g,
 .t3-g {
     width: 100%;
-} */
+}
 
-.t1 {
+/* .t1 {
     background-image: url(../pic/project1/1280x720-thumbnail1.gif);
     background-size: 80%;
 }
@@ -257,7 +257,7 @@ Projects
 .t3 {
     background-image: url(../pic/project3/1280x720-thumbnail3.gif);
     background-size: 110%;
-}
+} */
 
 .thumb-back,
 .thumb-back-negative {

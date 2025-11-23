@@ -58,7 +58,7 @@ p,h1,h2,h3 {
 
 header,
 footer {
-    background-color: var(--grey);
+    background-color: var(--blue);
 }
 
 header {
@@ -90,15 +90,17 @@ nav {
     align-items: center;
 }
 
-.mode {
-    color: var(--black);
-    background-color: var(--hellgrey);
+.mode,
+.back {
+    color: var(--white);
+    background-color: var(--grey);
 }
 
 .mode-inactive {
-    color: var(--white);
+    color: var(--hellgrey);
     background-color: var(--darkgrey);
 }
+
 
 /* 
 ========
@@ -110,15 +112,15 @@ Landing page
 main,
 aside {
     background-color: var(--blue);
+    color: var(--white)
 }
 
-main {
-    color: #fff;
-    
+main {    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: clamp(1rem, 6rem, 12rem);
+
 }
 
 
@@ -127,7 +129,7 @@ h1 {
     font-size: var(--font-32px);
     line-height: var(--font-40px);
     hyphens: manual;
-
+    
     margin-top: clamp(5rem, 20%, 20rem);
 }
 
@@ -170,7 +172,7 @@ About me
 
 .about-me,
 .projects {
-    background-color: #fff;
+    background-color: var(--white);
     padding-top: clamp(2rem, 6rem, 24rem);
     padding-bottom: clamp(2rem, 6rem, 24rem);
 }
@@ -191,6 +193,7 @@ h2 {
 }
 
 p {
+    color: var(--black-10);
     font-size: var(--font-24px);
     line-height: var(--font-32px);
     hyphens: auto;
@@ -223,7 +226,7 @@ Projects
 
 .project-card {
     max-width: clamp(8rem, 100%, 26rem);
- }
+}
 
 .thumbnail {
     background-color: var(--black);
@@ -258,6 +261,8 @@ Projects
     background-image: url(../pic/project3/1280x720-thumbnail3.gif);
     background-size: 110%;
 } */
+
+
 
 .thumb-back,
 .thumb-back-negative {
@@ -298,7 +303,6 @@ Contact
 */
 
 aside {
-    color: var(--white);
     font-size: var(--font-24px);
     line-height: var(--font-32px);
 
@@ -385,7 +389,7 @@ a {
 }
 
 nav:is(:hover, :active) {
-    background-color: var(--black-10);
+    background-color: var(--black);
 }
 
 .project-link:is(:hover, :active) {
@@ -409,9 +413,10 @@ a:is(:hover, :active) {
     text-decoration-thickness: 1px;
 }
 
-.mode:is(:hover, :active){
+.mode:is(:hover, :active),
+.back:is(:hover, :active){
     text-decoration: none;
-    background-color: var(--black-10);
+    background-color: var(--black);
 }
 
 

@@ -27,6 +27,9 @@
     ======== 
     */
 
+
+
+
     nav{
         display: none;
     }
@@ -45,7 +48,6 @@
         padding: 1vh 4vh;
     }
 
-
     .about-me {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
@@ -58,12 +60,10 @@
         max-width: clamp(8rem, 22rem, 22rem);
     }
 
-
     h1 {
         font-size: var(--font-40px);
         line-height: var(--font-48px);
         max-width: clamp(300px, 70%, 900px);
-
         margin-top: clamp(4rem, 28vh, 16rem);
     }
 
@@ -103,16 +103,17 @@
     */
 
     nav:is(:hover, :active) {
-        background-color: var(--black-10);
+        background-color: var(--black);
     }
 
-    .mode:is(:hover, :active){
-        background-color: var(--black-10);
+    .mode:is(:hover, :active),
+    .back:is(:hover, :active){
+        background-color: var(--black);
     }
 
     .menu2:is(:hover, :active) {
         text-decoration: none;
-        background-color: var(--black-10);
+        background-color: var(--black);
     }
 
     .project-link:is(:hover, :active) {

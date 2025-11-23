@@ -18,9 +18,9 @@ footer {
     padding-left: 1.5rem;
 }
 
-
 header {
     flex-direction: row;
+    background-color: var(--black-10);
 }
         
 nav{
@@ -37,7 +37,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .about-me.subpage {
@@ -67,6 +67,7 @@ h2 {
 
 .subpage-h1 {
     margin-top: 0;
+    color: var(--blue-n);
 }
 
 h3 {
@@ -779,6 +780,7 @@ Gallery
 
 @media screen and (min-width: 1080px) {
 
+
     main,
     .about-me,
     .projects,
@@ -787,7 +789,8 @@ Gallery
         padding-left: clamp(3px, 3rem, 6rem);
     }
 
-    
+
+
     .projekt-lp {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
@@ -812,13 +815,14 @@ Gallery
         margin-bottom: 2rem;
     }
 
-    .placeholder {
-        display: block;
-    }
 
     .part-0 {
         grid-column: 2;
         justify-self: end;
+    }
+
+    .placeholder {
+        display: block;
     }
 
     .part {
@@ -836,6 +840,7 @@ Gallery
         border-width: 0px 0px 0.5px 0px;
         vertical-align: top;
         display: table-cell;
+
         margin-bottom: 0;
         padding-right: 4rem;
     }
@@ -847,6 +852,11 @@ Gallery
         width: 12rem;
         border-width: 0px 0px 0.5px 0px;
     }
+    .td-3 {
+        width: 80%;
+    }
+
+
 
     .next-page,
     .next-page:hover {
